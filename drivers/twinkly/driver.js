@@ -1,15 +1,22 @@
-'use strict';
+"use strict";
 
 const Homey = require('homey');
+const util = require('/lib/util.js');
 const dgram = require('dgram');
 const message = Buffer.from('\x01discover');
+
 var devices = [];
 var added_devices = [];
 
 class TwinklyDriver extends Homey.Driver {
 
-  async onPairListDevices() {
-    return await this.discoverDevices();
+  async onPairListDevices(data, callback) {
+    try {
+      let devices = await this.discoverDevices();
+      callback(null, devices);
+    } catch (error) {
+      callback(error, false);
+    }
   }
 
   discoverDevices() {

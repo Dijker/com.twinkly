@@ -1,6 +1,6 @@
 {
   "name": "com.twinkly",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Homey app for basic control of Twinkly Christmas Lights",
   "main": "app.js",
   "dependencies": {

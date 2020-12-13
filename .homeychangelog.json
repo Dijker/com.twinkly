@@ -5,10 +5,13 @@
   "1.1.1": {
     "en": "Added an action card for switching demo mode on or off."
   },
-  "3.0.0": {
-    "en": "Update to SDK3 (require Homey firmware 5.x) and some minor improvements."
+  "1.1.2": {
+    "en": "Fixed an issue with pairing Twinkly lights."
   },
-  "3.0.2": {
-    "en": "Update to SDK3 (require Homey firmware 5.x) and some minor improvements."
+  "3.0.1": {
+    "en": "Fixed an issue with pairing Twinkly lights."
+  },
+  "3.0.3": {
+    "en": "Add dimming capability."
   }
 }
